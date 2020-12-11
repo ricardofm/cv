@@ -2,318 +2,204 @@
 <html lang="es">
 
 <head>
-  <!--formato de codificación de caracteres Unicode e ISO 10646-->
   <meta charset="UTF-8">
-  <!--Esto le da al navegador instrucciones sobre cómo controlar las dimensiones y la escala de la página-->
+  <meta name="description" content="Esta es la página personal de Ricardo Febles en donde
+  encontrará información sobre él, contactarlo y más." />
+  <meta name="keywords" content="Ricardo José Febles Matos, página personal, cv" />
+  <meta name="author" content="Ricardo Febles" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--La vista de compatibilidad le permite al usuario o al navegador establecer el modo de compatibilidad, por defecto el
-   navegador identifica la vista de compatibilidad por medio de la versión del navegador establecida en el User Agent.-->
-  <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
-  <title>Bienvenidos | Ricardo Febles Matos</title>
-  <meta name="title" content="Bienvenidos | Ricardo Febles Matos">
-  <meta name="description" content="Página personal de Ricardo Febles Matos">
-  <meta name="keywords" content="CV, personal homepage, página personal, Ricardo Febles Matos">
-  <meta name="author" content="Ricardo Febles Matos">
-  <link rel="stylesheet" href="css/styles.css">
-  <!--sacado de favicon.cc-->
-  <link rel="icon" href="images/favicon.ico">
-  <!--sacado de google fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
-  <!--script para Internet Explorer (version 8 e inferior), que no permiten la aplicación de estilos en elementos no soportados-->
-  <!--[if lt IE 9]>
-    <script>
-      document.createElement("header" );
-      document.createElement("footer" );
-      document.createElement("section");
-      document.createElement("aside"  );
-      document.createElement("nav"    );
-      document.createElement("article");
-      document.createElement("hgroup" );
-      document.createElement("time"   );
-    </script>
-    <noscript>
-       <strong>Warning !</strong>
-       Because your browser does not support HTML5, some elements are simulated using JScript.
-       Unfortunately your browser has disabled scripting. Please enable it in order to display this page.
-    </noscript>
-  <![endif]-->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Página personal de Ricardo Febles.</title>
+  <!-- enlace a hoja de estilo styles.css -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="images/favicon_io/favicon.ico" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap" rel="stylesheet">
+  <!-- Google Fonts for mobile(360px)-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+  <!-- Google Fonts for mobile(450px)-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <!-- Google Fonts for mobile(451px) a (767px)-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lekton&family=Russo+One&display=swap" rel="stylesheet">
+  <!-- Google Fonts for mobile(768px) a (850px)-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Mirza:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <hr class="line-header" />
 
-  <!--todos los elementos centralizados-->
-  <center>
-    <header>
-      <!--nombre y subtema-->
-      <h1 class="heading1" id="top">Ricardo Febles Matos <br>
-        <span class="subheading1">mi página personal</span></h1>
-      <img class="imgheader" src="https://media.giphy.com/media/ZrwcNForqzoJi/giphy.gif" alt="people walking">
-    </header>
+  <header>
+    <img src="images/circle-facephoto.png" alt="Foto de perfil de Ricardo Febles">
+    <div class="profile-data">
+      <h1 id="heading">Ricardo J. Febles Matos</h1>
+      <p><em>Estudiante|Overnight Stocker|Web Developer Junior|Blogger</em></p>
+      <p>Puerto Rico</p>
+    </div>
+  </header>
 
-    <nav>
+  <hr class="line-header" />
+
+  <nav>
+    <strong class="home-nav">Home</strong>&nbsp;|
+    <a href="#intro">Introducción</a>&nbsp;|
+    <a href="#services">Servicios</a>&nbsp;|
+    <a href="#aboutme">Acerca de mí</a>&nbsp;|
+    <a href="#contactme">Contacto</a>&nbsp;|
+    <!-- Aquí irá un enlace a juego creado -->
+    <a href="">Explora</a>
+  </nav>
+
+  <div id="container-gif-below-nav">
+    <img id="gif" src="images/giphy.gif" alt="persona observando la página">
+  </div>
+
+  <hr class="line-after-header after-navbar" />
+
+  <section id="intro">
+    <h2>Introducción</h2>
+    <p>Saludos, en esta página encontrará info para contactarme, así como los servicios que presto
+      pero que no se limitan a otros proyectos. También puede entrar a los blogs
+      en los que trabajo y suscribirse y/o compartirlos. En el botón <span id="explore-button-guide" title="Ve a barra de navegación">EXPLORA</span> le dejo un juego
+      para que lo jueguen y en una sección de comentarios pueden escribir como les fue.</p>
+    <img src="images/circled-ideograph-secret.png" id="secret-button" style="margin-top: 3em;" alt="botón secreto">
+  </section>
+
+  <hr class="line-after-header" />
+
+  <section id="services">
+    <h2>Servicios</h2>
+    <ul>
+      <li>Reparación de PCs y laptops</li>
+      <li>Creación de páginas tanto desde cero, o uso de apps CMS
+        como Wordpress, Shopify o Blogger</li>
+      <li>Creación de Sistemas de Puntos de Ventas (POS).</li>
+      <li>Trabajos en Excel desde tabulaciones, reportes, etc.</li>
+      <li>Creación de juegos para Windows y Android.</li>
+      <li>Creación de logos tanto estáticos como animados, además de
+        MicroVideos para anuncios, promociones, teasers, etc.</li>
+    </ul>
+  </section>
+
+  <hr class="line-after-header" />
+
+  <section id="aboutme">
+    <h2>Acerca de mí</h2>
+    <section id="first-container-in-aboutme">
+      <img src="images/portfolio.gif" alt="portafolio" id="img-work-portfolio">
+      <h3>Experiencia como Web Developer en:</h3>
+      <ol>
+        <li>HTML|HTML5</li>
+        <li>CSS|CSS3</li>
+        <li>Bootstrap</li>
+        <li>JavaScript</li>
+        <li>SQL</li>
+      </ol>
+    </section>
+
+    <br><br>
+
+    <section id="blogs-container">
+      <h3>Mis blogs</h3>
       <ul>
-        <li><a class="btns" href="#top">Home</a></li>
-        <li><a class="btns" href="#about">¿Quién soy?</a></li>
-        <li><a class="btns" href="#cv">Resumé</a></li>
-        <li><a class="btns" href="#contactme">Contáctame</a></li>
+        <li><a href=" https://www.problemasenmipais.ml/" target="_blank">
+            problemasenmipais.ml</a></li>
       </ul>
-    </nav>
-
-    <!--línea divisoria entre header y wrapper-bio-->
-    <hr class="division">
-
-    <main>
-      <section id="about">
-        <div class="wrapper-bio">
-          <h2>Soy...</h2>
-          <p>un ciudadano comprometido con aportar al país.</p>
-          <p>Estudiante y trabajador motivado por nuevas oportunidades.</p>
-          <p>Buscando abrirme paso por el desarrollo Web.</p>
-          <p>Ayudar y aportar positivamente con desempeño y dedicación.</p>
-          <p>Servir de ejemplo.&nbsp;<em>Ese soy yo...</em></p>
-        </div>
-
-      </section>
-
-      <!--línea divisoria entre wrapper-bio y wrapper-cv-->
-      <hr class="division">
-
-      <section id="cv">
-        <div class="wrapper-cv">
-          <h2>Mi Resumé</h2>
-          <br>
-          <iframe class="iframepdf" src="resources/RicardoFeblesCVExample.pdf"></iframe>
-          <!--mostrar opción de documento en plain text-->
-          <div class="cv-box-right"><a class="btn_download" href="resources/RicardoFeblesCVExample.txt" target="_blank" download="cv">
-              Descargar en texto sencillo</a>
-          </div>
-        </div>
-      </section>
-
-      <!--línea divisoria entre wrapper-cv y wrapper-contacto-->
-      <hr class="division">
-
-      <section id="contactme">
-        <div class="wrapper-contact">
-          <h2>Envíame un mensaje</h2>
-
-          <!--Los forms se desplegarán en forma de tabla (display: table)-->
-          <form action="mailto:febles.mat.ricardo@hotmail.com" method="POST" enctype="text/plain">
-
-            <!--En cada fila habrá dos celdas que ocuparán todo el ancho establecido-->
-            <div class="row">
-              <label class="cell" for="flastname">Primer Apellido: </label>
-              <label class="cell" for="fname">Nombre: </label>
-            </div>
-
-            <div class="row">
-              <input class="cell forms-text" type="text" name="flastname" id="flastname" value="" minlength="3" maxlength="58" tabindex=2>
-              <input class="cell forms-text" type="text" name="fname" id="fname" value="" minlength="3" maxlength="58" tabindex=1 required>
-            </div>
-
-            <div class="row">
-              <label class="cell" for="age">Edad: </label>
-              <label class="cell" for="slastname">Segundo Apellido: </label>
-            </div>
-
-            <div class="row">
-              <input class="cell forms-text" type="number" name="age" id="age" step="1" min="17" max="95" tabindex=4 required>
-              <input class="cell forms-text" type="text" name="slastname" id="slastname" value="" minlength="3" maxlength="58" tabindex=3>
-            </div>
-
-            <div class="row">
-              <label class="cell" for="email">Email: </label>
-              <label class="cell" for="pueblo">Pueblo: </label>
-            </div>
-
-            <div class="row">
-              <input class="cell forms-text" type="email" id="email" name="email" tabindex=6 required>
-              <select class="cell forms-text" id="pueblo" name="Pueblo" tabindex=5>
-
-                <option value=""> </option>
-
-                <option value="Adjuntas">Adjuntas</option>
-
-                <option value="Aguada">Aguada</option>
-
-                <option value="Aguadilla">Aguadilla</option>
-
-                <option value="Aguas Buenas">Aguas Buenas</option>
-
-                <option value="Aibonito">Aibonito</option>
-
-                <option value="Añasco">Anasco</option>
-
-                <option value="Arecibo">Arecibo</option>
-
-                <option value="Arroyo">Arroyo</option>
-
-                <option value="Barceloneta">Barceloneta</option>
-
-                <option value="Barranquitas">Barranquitas</option>
-
-                <option value="Bayamón">Bayamon</option>
-
-                <option value="Cabo Rojo">Cabo Rojo</option>
-
-                <option value="Caguas">Caguas</option>
-
-                <option value="Camuy">Camuy</option>
-
-                <option value="Canóvanas">Canovanas</option>
-
-                <option value="Carolina">Carolina</option>
-
-                <option value="Cataño">Catano</option>
-
-                <option value="Cayey">Cayey</option>
-
-                <option value="Ceiba">Ceiba</option>
-
-                <option value="Ciales">Ciales</option>
-
-                <option value="Cidra">Cidra</option>
-
-                <option value="Coamo">Coamo</option>
-
-                <option value="Comerío">Comerio</option>
-
-                <option value="Corozal">Corozal</option>
-
-                <option value="Culebra">Culebra</option>
-
-                <option value="Dorado">Dorado</option>
-
-                <option value="Fajardo">Fajardo</option>
-
-                <option value="Florida">Florida</option>
-
-                <option value="Guánica">Guanica</option>
-
-                <option value="Guayama">Guayama</option>
-
-                <option value="Guayanilla">Guayanilla</option>
-
-                <option value="Guaynabo">Guaynabo</option>
-
-                <option value="Gurabo">Gurabo</option>
-
-                <option value="Hatillo">Hatillo</option>
-
-                <option value="Hormigueros">Hormigueros</option>
-
-                <option value="Humacao">Humacao</option>
-
-                <option value="Isabela">Isabela</option>
-
-                <option value="Jayuya">Jayuya</option>
-
-                <option value="Juana Díaz">Juana Diaz</option>
-
-                <option value="Juncos">Juncos</option>
-
-                <option value="Lajas">Lajas</option>
-
-                <option value="Lares">Lares</option>
-
-                <option value="Las Marías">Las Marias</option>
-
-                <option value="Las Piedras">Las Piedras</option>
-
-                <option value="Loíza">Loiza</option>
-
-                <option value="Luquillo">Luquillo</option>
-
-                <option value="Manatí">Manati</option>
-
-                <option value="Maricao">Maricao</option>
-
-                <option value="Maunabo">Maunabo</option>
-
-                <option value="Mayaguez">Mayaguez</option>
-
-                <option value="Moca">Moca</option>
-
-                <option value="Morovis">Morovis</option>
-
-                <option value="Naguabo">Naguabo</option>
-
-                <option value="Naranjito">Naranjito</option>
-
-                <option value="Orocovis">Orocovis</option>
-
-                <option value="Patillas">Patillas</option>
-
-                <option value="Peñuelas">Penuelas</option>
-
-                <option value="Ponce">Ponce</option>
-
-                <option value="Quebradillas">Quebradillas</option>
-
-                <option value="Rincón">Rincon</option>
-
-                <option value="Río Grande">Rio Grande</option>
-
-                <option value="Sabana Grande">Sabana Grande</option>
-
-                <option value="Salinas">Salinas</option>
-
-                <option value="San Germán">San German</option>
-
-                <option value="San Juan">San Juan</option>
-
-                <option value="San Lorenzo">San Lorenzo</option>
-
-                <option value="San Sebastian">San Sebastian</option>
-
-                <option value="Santa Isabel">Santa Isabel</option>
-
-                <option value="Toa Alta">Toa Alta</option>
-
-                <option value="Toa Baja">Toa Baja</option>
-
-                <option value="Trujillo Alto">Trujillo Alto</option>
-
-                <option value="Utuado">Utuado</option>
-
-                <option value="Vega Alta">Vega Alta</option>
-
-                <option value="Vega Baja">Vega Baja</option>
-
-                <option value="Vieques">Vieques</option>
-
-                <option value="Villalba">Villalba</option>
-
-                <option value="Yabucoa">Yabucoa</option>
-
-                <option value="Yauco">Yauco</option>
-
-              </select>
-            </div>
-
-            <br><br>
-            <!--textarea y submit se ubicarán según documento html (center) y NO el wrapper-contact-->
-            <textarea placeholder="Escribe tu mensaje aquí..." name="message" id="message" cols="30" rows="10" tabindex=7 maxlength="800" required></textarea>
-
-            <br><br><br>
-
-            <input name="Submit" type="submit" value="Enviar" tabindex=8>
-          </form>
-        </div>
-
-      </section>
-    </main>
-
-    <!--línea divisoria entre wrapper-contacto y footer-->
-    <hr class="division">
-
-    <footer>
-      <p class="copyright">&copy;Copyright 2020 Ricardo Febles Matos. Todos los derechos reservados.</p>
-    </footer>
-
-  </center>
-
-  <script src="scripts.js"></script>
+    </section>
+
+    <br><br>
+
+    <section id="table-container">
+      <table>
+        <tr>
+          <th id="title-table" colspan="4">Experiencia en el trabajo</th>
+        </tr>
+        <colgroup span="4" class="colums"></colgroup>
+        <tr>
+          <th>Mes/Año</th>
+          <th>Lugar</th>
+          <th>Posición</th>
+          <th>Descripción</th>
+        </tr>
+        <tr>
+          <td>11/2017</td>
+          <td>Walmart, Inc.</td>
+          <td>Asociado de ventas</td>
+          <td>
+            . . . . . . . . . . . . . .
+          </td>
+        </tr>
+        <tr>
+          <td>05/2019</td>
+          <td>Allied Contractor & Engineers (Ing. Jaime Carmona)</td>
+          <td>Obrero</td>
+          <td>
+            . . . . . . . . . . . . . .
+          </td>
+        </tr>
+        <tr>
+          <td>06/2020</td>
+          <td>Consolidated Facility Services (Maximo Solar)</td>
+          <td>Almacén/Despacho</td>
+          <td>
+            . . . . . . . . . . . . . .
+          </td>
+        </tr>
+        <tr>
+          <td>07/2020</td>
+          <td>Walmart, Inc.</td>
+          <td>Overnight stocker</td>
+          <td>
+            . . . . . . . . . . . . . .
+          </td>
+        </tr>
+      </table>
+    </section>
+    <div class="download-cv">
+      <p style="text-align: center;">Si quiere ver el resumé completo haga click a este <a class="cv-link" href="files/RicardoFeblesCVSpa.pdf" target="_blank" download>
+          enlace</a>.</p>
+    </div>
+  </section>
+
+  <hr class="line-after-header" />
+
+  <section id="contactme">
+    <h2>Contacto</h2>
+    <form class="" action="mailto:febles.mat.ricardo@hotmail.com" method="post" enctype="text/plain">
+      <label for="name">Nombre:</label>
+      <input type="text" onfocus="this.value=''" name="yourName" value="Ingrese su nombre completo" required>
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" name="yourEmail" required>
+      <br>
+      <label for="tel">Teléfono:</label>
+      <input type="tel" onfocus="this.value=''" name="yourTel" id="" value="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+      <br>
+      <label for="file">Archivo (.pdf,.docx,.png,.jpg): </label>
+      <input type="file" name="yourFile" id="" />
+      <br>
+      <label for="project-description">Describa lo que quiere:</label>
+      <textarea name="yourDescription" id="" cols="30" rows="10"></textarea>
+      <br>
+      <label for="date-completion">Fecha en que desea el proyecto completado:</label><br>
+      <input name="yourDate" type="date" />
+      <br><br><br><br><br>
+      <input type="reset" value="Borrar">
+      <input type="submit" name="" value="Enviar">
+    </form>
+  </section>
+
+  <br><br><br>
+
+  <!-- se hace uso de línea hr del header -->
+  <hr class="line-header" />
+
+  <footer><small>&#169;2020 Ricardo Febles Matos.</small></footer>
 </body>
 
 </html>
